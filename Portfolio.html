@@ -36,17 +36,24 @@
         crossorigin="anonymous"
       ></script>
     <!-- ----------------------------------------------------- -->
-    <title>Style House</title>
-    <!------------------------ Create style for our main Picture----------------------------->
+    <title>Style House Portfolio</title>
+    <!------------------------ Modyfy style for our Cards from Bootstrap----------------------------->
     <style>
-      .rounded-img {
-        width: 80%;
-        border-radius: 50%;
-        padding: 0.5em;
-        margin: 2em;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+      .card {
+        border-radius: 2em;
+        text-align: center;
+        padding: 0.2%; /*otstup Vnutreniy*/
+      }
+      /*Create Card's Modificator, which change background color if cursor placed in card area*/
+      .card:hover {
+        background-color: rgba(138, 136, 145, 0.1);
       }
       /* ----------------------------------------------------------------------------------- */
+      .card img {
+        border-radius: 2em;
+        width: 99.5%;
+        margin: auto; /*otstup Vneshniy*/
+      }
     </style>
   </head>
   <body>
@@ -54,7 +61,7 @@
     <nav class="navbar navbar-dark navbar-expand-lg bg-dark">
       <div class="container">
         <a class="navbar-brand p-0" href="Index.html">
-          <img src="img/logo.png" alt="logo" width="80%">
+          <img src="img/logo.png" alt="logo" width="45">
         </a>
         <button
           class="navbar-toggler"
@@ -116,15 +123,51 @@
     </nav>
     <!------------------------------------------------------------------------>
     <!---------------------- Create Card object from bootstrap ------------------------>
-    <div class="container">  
-      <div class="card" style="width: 18rem;">
-         <img src="..." class="card-img-top" alt="...">
-           <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <a href="#" class="btn btn-primary">Full Size</a>
-           </div>
-       </div>
+    <div class="container my-5"> 
+      <!-- Create A row and modify it by creating 3 columns for big screens, 2 for middle and 1 for small-->
+      <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-5">
+        <div class="col">
+          <div class="card">
+            <img src="img/Hil_01.jpg" class="card-img-top" alt="Hilton_Photo">
+              <div class="card-body">
+               <h5 class="card-title">Hilton</h5>
+               <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+               <a href="img/Hil_01.jpg" class="btn btn-primary" target="_blank">Full Size Render</a>
+              </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="img/AR_02.jpg" class="card-img-top" alt="Armenia_Photo">
+              <div class="card-body">
+               <h5 class="card-title">Armenia</h5>
+               <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+               <a href="img/AR_02.jpg" class="btn btn-primary" target="_blank">Full Size Render</a>
+              </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="img/PW_02.jpg" class="card-img-top" alt="Polo_vilas_Photo">
+              <div class="card-body">
+               <h5 class="card-title">Polo Vilas</h5>
+               <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+               <a href="img/PW_02.jpg" class="btn btn-primary" target="_blank">Full Size Render</a>
+              </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="https://i.pinimg.com/originals/4d/78/59/4d785963afd0c325abe89d5848b3c37f.jpg" class="card-img-top" alt="Polo_vilas_Photo">
+              <div class="card-body">
+               <h5 class="card-title">Pinterest</h5>
+               <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+               <a href="https://i.pinimg.com/originals/4d/78/59/4d785963afd0c325abe89d5848b3c37f.jpg" class="btn btn-primary" target="_blank">Full Size Render</a>
+              </div>
+          </div>
+        </div>
+       
+      </div> 
     </div>
     <!-- -------------------------------------------------------------------------- -->
         </div>
